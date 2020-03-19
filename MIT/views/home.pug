@@ -1,0 +1,12 @@
+extends layout
+block content
+  header
+    h1 #{title}
+  br
+  form(method='POST' action='/index')
+    div  
+      label(for='City') City:
+      br
+      input(type='text', placeholder='City Name' name='City')
+      br
+      button(type='submit') Invia
